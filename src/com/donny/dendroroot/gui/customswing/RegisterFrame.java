@@ -1,15 +1,15 @@
 package com.donny.dendroroot.gui.customswing;
 
-import com.donny.dendrofinance.gui.ProgramMainGui;
+import com.donny.dendroroot.gui.MainGui;
 import com.donny.dendroroot.instance.Instance;
 
 import javax.swing.*;
 
 public abstract class RegisterFrame extends JFrame {
-    protected final ProgramMainGui CALLER;
+    protected final MainGui CALLER;
     protected final Instance CURRENT_INSTANCE;
 
-    public RegisterFrame(ProgramMainGui caller, String name, Instance curInst) {
+    public RegisterFrame(MainGui caller, String name, Instance curInst) {
         super(name);
         CALLER = caller;
         CURRENT_INSTANCE = curInst;
