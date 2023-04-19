@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DendroRoot:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DendroRoot_jar</output-path>
+    <root id="archive" name="DendroRoot.jar">
+      <element id="module-output" name="DendroRoot" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.15.0-rc1/jackson-core-2.15.0-rc1.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
