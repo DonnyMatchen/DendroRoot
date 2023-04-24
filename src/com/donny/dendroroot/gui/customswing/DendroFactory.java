@@ -66,10 +66,10 @@ public class DendroFactory {
     public static void init(Instance curInst) {
         try {
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            InputStream file = DendroFactory.class.getResourceAsStream("/com/donny/dendrofinance/resources/unifont.ttf");
+            InputStream file = DendroFactory.class.getResourceAsStream("/com/donny/dendroroot/resources/unifont.ttf");
             Font font = Font.createFont(Font.TRUETYPE_FONT, file).deriveFont(15f);
             ge.registerFont(font);
-            file = DendroFactory.class.getResourceAsStream("/com/donny/dendrofinance/resources/verdana.ttf");
+            file = DendroFactory.class.getResourceAsStream("/com/donny/dendroroot/resources/verdana.ttf");
             font = Font.createFont(Font.TRUETYPE_FONT, file).deriveFont(15f);
             ge.registerFont(font);
             unifont = new Font("Unifont", Font.PLAIN, 15);
