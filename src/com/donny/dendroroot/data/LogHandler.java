@@ -44,27 +44,27 @@ public class LogHandler {
     }
 
     public void fatal(Class cause, String message) {
-        print("[" + cause.toString().split(" ")[1].substring(24) + "/FATAL] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.FATAL);
+        print("[" + cause.toString().split(" ")[1] + "/FATAL] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.FATAL);
     }
 
     public void error(Class cause, String message) {
-        print("[" + cause.toString().split(" ")[1].substring(24) + "/ERROR] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.ERROR);
+        print("[" + cause.toString().split(" ")[1] + "/ERROR] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.ERROR);
     }
 
     public void warn(Class cause, String message) {
-        print("[" + cause.toString().split(" ")[1].substring(24) + "/WARN] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.WARN);
+        print("[" + cause.toString().split(" ")[1] + "/WARN] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.WARN);
     }
 
     public void info(Class cause, String message) {
-        print("[" + cause.toString().split(" ")[1].substring(24) + "/INFO] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.INFO);
+        print("[" + cause.toString().split(" ")[1] + "/INFO] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.INFO);
     }
 
     public void debug(Class cause, String message) {
-        print("[" + cause.toString().split(" ")[1].substring(24) + "/DEBUG] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.DEBUG);
+        print("[" + cause.toString().split(" ")[1] + "/DEBUG] " + message, CURRENT_INSTANCE.logLevel != null && CURRENT_INSTANCE.logLevel.getLevel() >= LogLevel.DEBUG);
     }
 
     public final void trace(Class cause, String message) {
-        String str = "[" + cause.toString().split(" ")[1].substring(24) + "/TRACE] " + message;
+        String str = "[" + cause.toString().split(" ")[1] + "/TRACE] " + message;
         Date now = new Date();
         DateFormat format = new SimpleDateFormat("{MMM dd yyyy} (hh:mm:ss a z) ");
         TRACE.append(format.format(now)).append(str).append("\n");
